@@ -4,7 +4,7 @@
 
 This guide outlines the steps to create a nginx-deployment service and accessing the service using nodeport. The final goal is to access the targeted nginx-pod and curl the application using NodePort externally.
 
-![alt text](Nodeport-img.PNG)
+![alt text](./images/Nodeport-img.PNG)
 
 ## Prerequisites
 
@@ -94,7 +94,7 @@ kubectl get services
 
 We can also get all the information by using ``kubectl get all``
 
-![alt text](Get-all.PNG)
+![alt text](./images/Get-all.PNG)
 
 If the pods and services are runnung, we are ready for accessing Nginx using NodePort.
 
@@ -106,7 +106,7 @@ To get the IP address of the node in a Kubernetes cluster, you can use the kubec
 kubectl get nodes -o wide
 ```
 
-![alt text](internal-ip.PNG)
+![alt text](./images/internal-ip.PNG)
 
 ### 6. Curl using NodePort
 
@@ -118,4 +118,4 @@ curl http://10.62.2.15:30001
 
 ## Expected Output
 
-![alt text](curl.PNG)
+![alt text](./images/curl.PNG)
