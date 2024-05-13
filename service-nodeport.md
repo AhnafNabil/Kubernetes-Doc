@@ -100,7 +100,7 @@ If the pods and services are runnung, we are ready for accessing Nginx using Nod
 
 ### 5. Get the Internal IP
 
-To get the IP address of the node in a Kubernetes cluster, you can use the kubectl command-line tool to fetch this information. Here's how:
+To get the IP address of the node in a Kubernetes cluster, we can use the kubectl command-line tool to fetch this information. Here's how:
 
 ```bash
 kubectl get nodes -o wide
@@ -110,7 +110,7 @@ kubectl get nodes -o wide
 
 ### 6. Curl using NodePort
 
-We can access the Nginx server through any of your Kubernetes cluster nodes' IP addresses, on port 30001.
+We can access the Nginx server through any of our Kubernetes cluster nodes' IP addresses, on port 30001.
 
 ```bash
 curl http://10.62.2.15:30001
