@@ -107,3 +107,15 @@ kubectl get nodes -o wide
 ```
 
 ![alt text](internal-ip.PNG)
+
+### 6. Curl using NodePort
+
+We can access the Nginx server through any of your Kubernetes cluster nodes' IP addresses, on port 30001.
+
+```bash
+curl http://10.62.2.15:30001
+```
+
+## Expected Output
+
+![alt text](curl.PNG)
